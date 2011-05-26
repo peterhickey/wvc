@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Working Voices Choir | <%= @title %></title>
+		<title><%= title %></title>
 		<% csrf_meta_tag %>
-<!--  	<%= stylesheet_link_tag :all %> -->
-<!--  	<%= javascript_include_tag :defaults %> -->
-<!--  	<%= csrf_meta_tag %> -->
+    <!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->    
+    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+    <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+    <!--[if lt IE 8]>
+		<%= stylesheet_link_tag 'blueprint/ie' %>
+	<![endif]-->
+    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+	<style>
+		.content { margin-right: -1px; } 	/* this 1px negative margin can be placed on any
+		 										of the columns in this layout with the same
+												corrective effect. */
+		ul.nav a { zoom: 1; }  				/* the zoom property gives IE the hasLayout trigger 
+												it needs to correct extra whiltespace between the links */
+	</style>
 	</head>
-	<body>
-
-		<%= yield %>
-
-	</body>
+<body>
+    <div class="container">
+    	<div class="header">
+        	<%= image_tag("/images_template/wvc_logo1_clr_100.png", :alt => "Working Voices Choir Rose Logo", :class => "") %>
+			<%= image_tag("/images_template/vwc_words2.png", :alt => "Working Voices Choir Rose Logo", :class => "") %>
+	  	</div><!-- end .header -->
+      	<div class="sidebar1">
+        	<ul class="nav">
+          		<li><%= link_to "Home", '#' %></li>
+            	<li><%= link_to "Events", '#' %></li>
+            	<li><%= link_to "Songs", '#' %></li>
+				<li><%= link_to "Gallery", '#' %></li>
+				<li><%= link_to "About Us", '#' %></li>
+         	</ul>
+  	  	</div><!-- end .sidebar1 -->
+	  	<div class="content">
+        	<%= yield %>
+	  	</div><!-- end .content -->
+  	  	<div class="sidebar2">
+        	<ul class="nav">
+          		<li><%= link_to "Links", '#' %></li>
+            	<li><%= link_to "Member Registration", '#' %></li>
+            	<li><%= link_to "Login", '#' %></li>
+				<li><%= link_to "Members News", '#' %></li>
+         	</ul>		
+    	<!-- end .sidebar2 --></div>
+  		<div class="footer">
+        <p><a tabindex="100 " href='#'>Contact Us</a>  |  <a tabindex="101" href='#'>Terms &amp; Conditions and Privacy</a>  |  <a tabindex="102" href='#'>Disclaimer</a>  |  <a tabindex="103" href="http://theelist.com.au/web_builds/intro_lpage">Website created by The Elist </a>  |  <a tabindex="104" href='#'>Administrator</a></p>
+        <p>Copyright &copy; Working Voices Choir 2011 - All Rights Reserved.</p>
+        <!--end id footer-->		
+		
+		
+<!--    		<p>This .footer contains the declaration position:relative; to give Internet Explorer 6 hasLayout for the .footer and cause it to clear correctly. If you're not required to support IE6, you may remove it.</p> -->
+    	<!-- end .footer --></div>
+    </div><!-- end .container -->
+</body>
 </html>

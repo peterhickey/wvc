@@ -4,6 +4,9 @@ Wvc::Application.routes.draw do
   get "pages/contact"
   
   get "pages/about"
+  
+  get "pages/test"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
