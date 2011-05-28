@@ -112,6 +112,19 @@ describe PagesController do
 						:content => "Working Voices Choir | Joining Form")
 	end	
   end
+
+    describe "GET 'login'" do
+    it "should be successful" do
+      get 'login'
+      response.should be_success
+    end
+	
+	it "should have the right title" do
+	  get 'login'
+	  response.should have_selector("title",
+						:content => "Working Voices Choir | Login")
+	end	
+  end
   
     describe "GET 'members_news'" do
     it "should be successful" do

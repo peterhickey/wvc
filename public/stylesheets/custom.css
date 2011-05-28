@@ -52,6 +52,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	height: 120px;
 	background-image: url(../images_template/bkgnd_image.png);
 	background-repeat: repeat;
+	margin-bottom: 5px;
+	border-bottom: 2px solid #666;
 }
 
 .header img {
@@ -113,12 +115,11 @@ ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your li
 }
 ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
 	background: #000000;
-	color: #b1a053;
+	color: #ece862; /* actual yellow of logo */
 }
 
 /* ~~The footer ~~ */
 .footer {
-/*	padding: 10px 0; */
 	background-image: url(../images_template/bkgnd_image.png);
 	background-repeat: repeat;	
 	position: relative;/* this gives IE6 hasLayout to properly clear */
@@ -126,8 +127,8 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	font-size: 0.9em;
 	text-align: center;
     padding: 10px 0;
-    margin: 15px 0px 0px 0px;
-    border-top: 3px solid  #b1a053; /* wvc yellow */
+    margin: 0px 0px 0px 0px;
+    border-top: 2px solid  #b1a053; /* washed yellow of logo */
 /*       border: 1px solid #cdcdcd; */
 }
 
@@ -151,12 +152,55 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	line-height: 0px;
 }
 
+/*///////////////////////////////////////////////////////////////////////////////// Site Colours */
+.wvc_fnt_yel1 {
+	color: #b1a053; /* washed yellow of logo */
+}
+.wvc_fnt_yel2 {
+	color: #e0ba23; /* brighter washed yellow of logo */
+}
+.wvc_fnt_yel3 {
+	color: #ece862; /* actual yellow of logo */
+}
+
+/*/////////////////////////////////////////////////////////////////////////// Background Colours */
+.wvc_bgd_blk1 {
+	color: #3c3f42; /* black of nav container */
+}
+
 /*//////////////////////////////////////////////////////////////////////////// Home Landing Page */
 #home_lpage img {
-	border: 2px solid #ffffff;	
+	border: 2px solid #cdcdcd;	
 }
 
 #home_lpage h1 {
-	color: #ffffff;
 	font-size:1.2em;line-height:1.25;margin-bottom:1.25em;	
 }
+
+/*//////////////////////////////////////////////////////////////////////////// Gallery Landing Page */
+#gallery_lpage {
+	width: 97%;
+	padding: 0px 5px 0px 10px;	
+}
+
+#gallery_lpage .cssimage{
+	border-color: transparent;
+	border-width: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+
+#gallery_lpage#gallert_header a {
+	text-decoration:none;	
+}
+
+#gallery_lpage#gallert_header h1 {
+	padding-left:0px;	
+}
+
+.pwimages {
+	border: 1px solid #cdcdcd;
+	padding-left: 2px;
+}
+	

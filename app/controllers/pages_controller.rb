@@ -31,6 +31,10 @@ class PagesController < ApplicationController
   def joining_form
 	@title = "Joining Form"
   end
+#///////////////////////////////////////////////// Login Page   
+  def login
+	@title = "Login"
+  end
 #///////////////////////////////////////////////// Members-News Page   
   def members_news
 	@title = "Members News"

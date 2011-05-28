@@ -27,7 +27,13 @@ a img {border:none;}
 /* typography.css */
 html {font-size:100.01%;}
 body {font-size:75%;color:#cdcdcd;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
-h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#ffffff;}
+
+/*/////////////////////////////////////////////////////////// Original Heading Colour*/
+/*h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#ffffff;} */
+
+/*/////////////////////////////////////////////////////////// Substituted Heading Colour*/
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#ece862;} /* actual yellow of logo */
+
 /*/////////////////////////////////////////////////////////// Original Heading Settings*/
 /*h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
 h2 {font-size:2em;margin-bottom:0.75em;}
@@ -35,6 +41,7 @@ h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
 h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
 h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
 h6 {font-size:1em;font-weight:bold;} */
+
 /*/////////////////////////////////////////////////////////// Substituted Heading Settings*/
 h1 {font-size:2em;line-height:1;margin-bottom:0.5em;}
 h2 {font-size:1.6em;margin-bottom:0.75em;}

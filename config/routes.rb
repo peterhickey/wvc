@@ -15,6 +15,8 @@ Wvc::Application.routes.draw do
 	
 	get "pages/joining_form"
 	
+	get "pages/login"
+	
 	get "pages/members_news"	
 
   	get "pages/contact_us"
