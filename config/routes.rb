@@ -1,11 +1,31 @@
 Wvc::Application.routes.draw do
-  get "pages/home"
+	get "pages/home"
+  
+   	get "pages/about_us" 
+   
+   	get "pages/events"
+	
+	get "pages/choir_booking"
+	
+	get "pages/songs"
+	
+	get "pages/gallery"
+	
+	get "pages/links"
+	
+	get "pages/joining_form"
+	
+	get "pages/members_news"	
 
-  get "pages/contact"
+  	get "pages/contact_us"
+	
+	get "pages/terms_conditions"
+	
+	get "pages/disclaimer"
+	
+	get "pages/administrator"
   
-  get "pages/about"
-  
-  get "pages/test"
+  	get "pages/test"
 
 
   # The priority is based upon order of creation:
