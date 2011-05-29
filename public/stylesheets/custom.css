@@ -196,7 +196,8 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 }
 
 #gallery_lpage#gallert_header h1 {
-	padding-left:0px;	
+	padding-left:0px;
+	text-decoration:none;	
 }
 
 .pwimages {
