@@ -177,7 +177,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	font-size:1.2em;line-height:1.25;margin-bottom:1.25em;	
 }
 
-/*//////////////////////////////////////////////////////////////////////////// Gallery Landing Page */
+/*///////////////////////////////////////////////////////////////////////// Gallery Landing Page */
 #gallery_lpage {
 	width: 97%;
 	padding: 0px 5px 0px 10px;	
@@ -205,3 +205,125 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	padding-left: 2px;
 }
 	
+/*/////////////////////////////////////////////////////////////////// Choir Joining Landing Page */
+#joining_lpage ul {	
+	list-style: none;
+	margin-left: -40px;
+}
+
+#joining_lpage ul p {	
+	margin: 1px;
+}
+
+#joining_lpage ul h2 {
+	margin-top: 20px;	
+	margin-bottom: 5px;
+}
+
+#joining_lpage span.twist {
+	margin-left: 40px;	
+	font-weight: bold;	
+}
+
+#joining_lpage #join_form {
+	float: right;	
+	witdth: 134px;
+	margin-right:20px;
+	border: 2px solid #cdcdcd;	
+}
+
+/*////////////////////////////////////////////////////////////// General Classes*/
+.bold_text {
+     font-weight: bold;
+}
+
+.italic_text {
+      font-style: italic;
+}
+
+/*//////////////////////////////////////////////// Line Space */
+.line_sp_1 {
+      line-height: 1.0em !important;
+}
+
+/*//////////////////////////////////////////////// Margins */
+.no_marg_left {
+      margin-left: 0px !important;
+}
+
+.no_marg_right {
+      margin-right: 0px !important;
+}
+
+.no_marg_top {
+      margin-top: 0px !important;
+}
+
+.no_marg_bot {
+      margin-bottom: 0px !important;
+}
+
+.no_marg_top_bot {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+}
+
+.no_marg {
+      margin: 0px !important;
+}
+
+.marg_top_5 {
+      margin-top: 5px !important;
+}
+
+.marg_bot_5 {
+      margin-bottom: 5px !important;
+}
+
+/*//////////////////////////////////////////////// Padding */
+.no_pad_left {
+      padding-left: 0px !important;
+}
+
+.no_pad_right {
+      padding-right: 0px !important;
+}
+
+.no_pad_top {
+      padding-top: 0px !important;
+}
+
+.no_pad_bot {
+      padding-bottom: 0px !important;
+}
+
+.no_pad_top_bot {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+}
+
+.no_pad {
+      padding: 0px !important;
+}
+
+
+/*//////////////////////////////////////////////// Borders */
+.no_bord {
+      border: 0px !important;
+}
+
+.no_bord_top {
+      border-top: 0px solid #cdcdcd !important;
+}
+
+.no_bord_bot {
+      border-bottom: 0px solid #cdcdcd !important;
+}
+
+.bord_top {
+      border-top: 1px solid #cdcdcd !important;
+}
+
+.bord_bot {
+      border-bottom: 1px solid #cdcdcd !important;
+}
