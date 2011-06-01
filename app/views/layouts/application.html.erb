@@ -24,9 +24,10 @@
 <body>
     <div class="container">
     	<div class="header">
-	       	<a tabindex="1" href='home'><%= image_tag("/images_template/wvc_logo2_clr_100.png", :alt => "Working Voices Choir Rose Logo", :class => "") %></a>
-			<a tabindex="1" href='home'><%= image_tag("/images_template/vwc_words2b.png", :alt => "Working Voices Choir Rose Logo", :class => "") %></a>
-	  	</div><!-- end .header -->
+	       	<div id="logo_img">
+				<a tabindex="1" href='home'><%= image_tag("/images_template/wvc_logo2_clr_100.png", :alt => "Working Voices Choir Rose Logo", :class => "logo_img") %></a>
+			<a tabindex="1" href='home'><%= image_tag("/images_template/vwc_words2c.png", :alt => "Working Voices Choir Rose Logo", :class => "words_img") %></a>
+	  	</div><!-- end id header -->
       	<div class="sidebar1">
         	<ul class="nav">
           		<li><%= link_to "Home", 'home' %></li>
