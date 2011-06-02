@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	font: 100%/1.4em Verdana, Arial, Helvetica, sans-serif;
 /*	background: #4E5869; */
 	background-image: url(../images_template/bkgnd_image.png);
 	background-repeat: repeat;
@@ -58,7 +58,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 .logo_img {
-	width: 100px;
+/*	width: 100px; */
+/*   	width: 10.6%; */
+	height: 83.3%;
 	margin-top: 10px;
 	margin-left: 26px;
 	margin-bottom: 10px;
@@ -66,12 +68,13 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 .words_img {
-	width: 700px;
+/*	width: 700px; */
+/*	width: 73.7%; */
+	height: 83.3%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 /*	border: 1px solid #cdcdcd; */
 }
-
 
 /* ~~ These are the columns for the layout. ~~ 
 
@@ -117,6 +120,7 @@ ul.nav {
 }
 ul.nav li {
 	border-bottom: 1px solid #666; /* this creates the button separation */
+	font-size: .9em;
 }
 ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
 	padding: 5px 5px 5px 15px;
