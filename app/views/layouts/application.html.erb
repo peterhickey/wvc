@@ -23,43 +23,13 @@
 	</head>
 <body>
     <div class="container">
-    	<div class="header">
-	       	<div id="logo_img">
-				<a tabindex="1" href='home'><%= image_tag("/images_template/wvc_logo2_clr_100.png", :alt => "Working Voices Choir Rose Logo", :class => "logo_img") %></a>
-			<a tabindex="1" href='home'><%= image_tag("/images_template/vwc_words2c.png", :alt => "Working Voices Choir Rose Logo", :class => "words_img") %></a>
-	  	</div><!-- end id header -->
-      	<div class="sidebar1">
-        	<ul class="nav">
-          		<li><%= link_to "Home", 'home' %></li>
-            	<li><%= link_to "Performances", 'events' %></li>
-            	<li><%= link_to "Our Songs", 'songs' %></li>
-				<li><%= link_to "Gallery", 'gallery' %></li>
-				<li><%= link_to "How to Join", 'joining_form' %></li>				
-         	</ul>
-  	  	</div><!-- end .sidebar1 -->
+	<%= render 'layouts/header' %>
+	<%= render 'layouts/sidebar1' %>	
 	  	<div class="content">
         	<%= yield %>
 	  	</div><!-- end .content -->
-  	  	<div class="sidebar2">
-        	<ul class="nav">
-				<li><%= link_to "Member Login", 'login' %></li>
-				<li><%= link_to "Members News", 'members_news' %></li>				
-				<li><%= link_to "Book the Choir", 'choir_bookings' %></li>
-				<li><%= link_to "About Us", 'about_us' %></li>
-				<li><%= link_to "Contact Us", 'contact_us' %></li>
-          		<li><%= link_to "Links", 'links' %></li>
-            	
-
-         	</ul>		
-    	<!-- end .sidebar2 --></div>
-  		<div class="footer">
-        <p><a tabindex="100 " href='contact_us'>Contact Us</a>  |  <a tabindex="101" href='terms_conditions'>Terms &amp; Conditions and Privacy</a>  |  <a tabindex="102" href='disclaimer'>Disclaimer</a>  |  <a tabindex="103" href="http://theelist.com.au/web_builds/intro_lpage">Website created by The Elist </a>  |  <a tabindex="104" href='administrator'>Administrator</a></p>
-        <p>Copyright &copy; Working Voices Choir 2011 - All Rights Reserved.</p>
-        <!--end id footer-->		
-		
-		
-<!--    		<p>This .footer contains the declaration position:relative; to give Internet Explorer 6 hasLayout for the .footer and cause it to clear correctly. If you're not required to support IE6, you may remove it.</p> -->
-    	<!-- end .footer --></div>
+	<%= render 'layouts/sidebar2' %>
+	<%= render 'layouts/footer' %>
     </div><!-- end .container -->
 </body>
 </html>

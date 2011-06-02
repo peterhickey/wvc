@@ -221,27 +221,27 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	padding-left: 2px;
 }
 	
-/*/////////////////////////////////////////////////////////////////// Choir Joining Landing Page */
-#joining_lpage ul {	
+/*////////////////////////////////////////////////////////// Choir 'How to Join' Landing Page */
+#howtojoin_lpage ul {	
 	list-style: none;
 	margin-left: -40px;
 }
 
-#joining_lpage ul p {	
+#howtojoin_lpage ul p {	
 	margin: 1px;
 }
 
-#joining_lpage ul h2 {
+#howtojoin_lpage ul h3 {
 	margin-top: 20px;	
 	margin-bottom: 5px;
 }
 
-#joining_lpage span.twist {
+#howtojoin_lpage span.twist {
 	margin-left: 40px;	
 	font-weight: bold;	
 }
 
-#joining_lpage #join_form {
+#howtojoin_lpage #join_form {
 	float: right;	
 	witdth: 134px;
 	margin-right:20px;

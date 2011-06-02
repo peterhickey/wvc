@@ -21,59 +21,33 @@ describe PagesController do
 						:content => "Working Voices Choir | Home")
 	end
   end
-
-  describe "GET 'about_us'" do
+  
+  describe "GET 'performances'" do
     it "should be successful" do
-      get 'about_us'
+      get 'performances'
       response.should be_success
     end
 	
 	it "should have the right title" do
-	  get 'about_us'
+	  get 'performances'
 	  response.should have_selector("title",
-						:content => "Working Voices Choir | About Us")
+						:content => "Working Voices Choir | Performances")
 	end
   end
 
-  describe "GET 'events'" do
+  describe "GET 'our_songs'" do
     it "should be successful" do
-      get 'events'
+      get 'our_songs'
       response.should be_success
     end
 	
 	it "should have the right title" do
-	  get 'events'
+	  get 'our_songs'
 	  response.should have_selector("title",
-						:content => "Working Voices Choir | Events")
-	end	
-  end
- 
-  describe "GET 'choir_booking'" do
-    it "should be successful" do
-      get 'choir_booking'
-      response.should be_success
-    end
-	
-	it "should have the right title" do
-	  get 'choir_booking'
-	  response.should have_selector("title",
-						:content => "Working Voices Choir | Choir Booking")
+						:content => "Working Voices Choir | Our Songs")
 	end	
   end
 
-  describe "GET 'songs'" do
-    it "should be successful" do
-      get 'songs'
-      response.should be_success
-    end
-	
-	it "should have the right title" do
-	  get 'songs'
-	  response.should have_selector("title",
-						:content => "Working Voices Choir | Songs")
-	end	
-  end
-  
   describe "GET 'gallery'" do
     it "should be successful" do
       get 'gallery'
@@ -87,19 +61,19 @@ describe PagesController do
 	end	
   end
   
-  describe "GET 'links'" do
+  describe "GET 'how_to_join'" do
     it "should be successful" do
-      get 'links'
+      get 'how_to_join'
       response.should be_success
     end
 	
 	it "should have the right title" do
-	  get 'links'
+	  get 'how_to_join'
 	  response.should have_selector("title",
-						:content => "Working Voices Choir | Links")
+						:content => "Working Voices Choir | How to Join")
 	end	
   end
-
+  
   describe "GET 'joining_form'" do
     it "should be successful" do
       get 'joining_form'
@@ -113,20 +87,33 @@ describe PagesController do
 	end	
   end
 
-    describe "GET 'login'" do
+  describe "GET 'members_login'" do
     it "should be successful" do
-      get 'login'
+      get 'members_login'
       response.should be_success
     end
 	
 	it "should have the right title" do
-	  get 'login'
+	  get 'members_login'
 	  response.should have_selector("title",
-						:content => "Working Voices Choir | Login")
+						:content => "Working Voices Choir | Members Login")
 	end	
   end
-  
-    describe "GET 'members_news'" do
+
+  describe "GET 'members_logout'" do
+    it "should be successful" do
+      get 'members_logout'
+      response.should be_success
+    end
+	
+	it "should have the right title" do
+	  get 'members_logout'
+	  response.should have_selector("title",
+						:content => "Working Voices Choir | Members Logout")
+	end	
+  end
+
+  describe "GET 'members_news'" do
     it "should be successful" do
       get 'members_news'
       response.should be_success
@@ -137,6 +124,32 @@ describe PagesController do
 	  response.should have_selector("title",
 						:content => "Working Voices Choir | Members News")
 	end	
+  end
+
+  describe "GET 'book_choir'" do
+    it "should be successful" do
+      get 'book_choir'
+      response.should be_success
+    end
+	
+	it "should have the right title" do
+	  get 'book_choir'
+	  response.should have_selector("title",
+						:content => "Working Voices Choir | Book the Choir")
+	end	
+  end
+  
+  describe "GET 'about_us'" do
+    it "should be successful" do
+      get 'about_us'
+      response.should be_success
+    end
+	
+	it "should have the right title" do
+	  get 'about_us'
+	  response.should have_selector("title",
+						:content => "Working Voices Choir | About Us")
+	end
   end
        
   describe "GET 'contact_us'" do
@@ -149,6 +162,19 @@ describe PagesController do
 	  get 'contact_us'
 	  response.should have_selector("title",
 						:content => "Working Voices Choir | Contact Us")
+	end	
+  end
+  
+  describe "GET 'links'" do
+    it "should be successful" do
+      get 'links'
+      response.should be_success
+    end
+	
+	it "should have the right title" do
+	  get 'links'
+	  response.should have_selector("title",
+						:content => "Working Voices Choir | Links")
 	end	
   end
   

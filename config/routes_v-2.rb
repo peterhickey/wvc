@@ -1,37 +1,39 @@
 Wvc::Application.routes.draw do
-	get "pages/home" 
+	match '/home', :to => 'pages#home' 
    
-   	get "pages/performances"
+   	match '/performances', :to => 'pages#performances'
 	
-	get "pages/our_songs"
+	match '/our_songs', :to => 'pages#our_songs'
 	
-	get "pages/gallery"
+	match '/gallery', :to => 'pages#gallery'
 	
-	get "pages/how_to_join"
+	match '/how_to_join', :to => 'pages#how_to_join'
 	
-	get "pages/joining_form"
+	match '/joining_form', :to => 'pages#joining_form'
 		
-	get "pages/members_login"
+	match '/members_login', :to => 'pages#members_login'
 	
-	get "pages/members_logout"
+	match '/members_logout', :to => 'pages#members_logout'
 	
-	get "pages/members_news"
+	match '/members_news', :to => 'pages#members_news'
 	
-	get "pages/book_choir"
+	match '/book_choir', :to => 'pages#book_choir'
 	
-	get "pages/about_us"	
+	match '/about_us', :to => 'pages#about_us'	
 
-  	get "pages/contact_us"
+  	match '/contact_us', :to => 'pages#contact_us'
 	
-	get "pages/links"
+	match '/links', :to => 'pages#links'
 	
-	get "pages/terms_conditions"
+	match '/terms_conditions', :to => 'pages#terms_conditions'
 	
-	get "pages/disclaimer"
+	match '/disclaimer', :to => 'pages#disclaimer'
 	
-	get "pages/administrator"
+	match '/administrator', 'pages#administrator'
   
-  	get "pages/test"
+  	match '/test', :to => 'pages#test'
+	
+	root :to => 'pages#home'
 
 
   # The priority is based upon order of creation:
