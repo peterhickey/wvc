@@ -246,11 +246,12 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	font-weight: bold;	
 }
 
-#howtojoin_lpage #join_form {
+#howtojoin_lpage #music_notes {
 	float: right;	
-	witdth: 134px;
-	margin-right:20px;
-	border: 2px solid #cdcdcd;	
+	width: 266px;
+	height: 246px;
+	margin: 0px 0px 0px 20px;
+/*	border: 2px solid #cdcdcd;	*/
 }
 
 /*////////////////////////////////////////////////////////////// General Classes*/
