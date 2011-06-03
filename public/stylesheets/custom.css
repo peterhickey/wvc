@@ -47,20 +47,25 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
 }
 
-/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.nav-content_box { /*necessary for feature line under header */
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-top: 2px solid #666; 
+}
+
 .header {
-	width: 100%;
+	width: 950px;
 	height: 120px;
 	background-image: url(../images_template/bkgnd_image.png);
 	background-repeat: repeat;
 	margin-bottom: 5px;
-	border-bottom: 2px solid #666;
+	/*	border: 1px solid #cdcdcd; */
 }
 
 .logo_img {
-/*	width: 100px; */
-  	width: 10.6%; 
-/*	height: 83.3%; */
+	width: 100px;
+/*  	width: 10.6%; */
+/*    height: 83.3%; */
 	margin-top: 10px;
 	margin-left: 26px;
 	margin-bottom: 10px;
@@ -68,9 +73,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 .words_img {
-/*	width: 700px; */
-	width: 73.7%; 
-/*	height: 83.3%; */
+	width: 700px;
+/*	width: 73.7%; */
+/*    height: 83.3%; */
 	margin-top: 10px;
 	margin-bottom: 10px;
 /*	border: 1px solid #cdcdcd; */
