@@ -3,29 +3,17 @@
 	<head>
 		<title><%= title %></title>
 		<% csrf_meta_tag %>
-    	<!--[if lt IE 9]>
-    		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    	<![endif]-->    
-    	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-    	<%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-    	<!--[if lt IE 8]>
-			<%= stylesheet_link_tag 'blueprint/ie' %>
-		<![endif]-->
-    	<%= stylesheet_link_tag 'custom', :media => 'screen' %>
-		<style>
-			.content { margin-right: -1px; } 	/* this 1px negative margin can be placed on any
-		 											of the columns in this layout with the same
-													corrective effect. */
-			ul.nav a { zoom: 1; }  				/* the zoom property gives IE the hasLayout trigger 
-													it needs to correct extra whiltespace between the links */
-		</style>
-		
+		<%= render 'layouts/stylesheets' %>
 	</head>
 <body>
+	<div id="skip">
+		<a href="#skipToContent" accesskey="c" >Skip to Main Content (ALT 'C')</a>
+	</div>
     <div class="container">
 	<%= render 'layouts/header' %>
 	<div class="nav-content_box">
-	<%= render 'layouts/sidebar1' %>	
+	<%= render 'layouts/sidebar1' %>
+		<p><a name="skipToContent" id="skipToContent"></a></p><!--Main Content Start -->
 	  	<div class="content">
         	<%= yield %>
 	  	</div><!-- end .content -->

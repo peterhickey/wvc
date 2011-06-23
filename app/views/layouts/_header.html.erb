@@ -1,4 +1,12 @@
-    	<div class="header">	       	
-			<a tabindex="1" href='home'><%= image_tag("/images_template/wvc_logo2_clr_100.png", :alt => "Working Voices Choir Rose Logo", :class => "logo_img") %></a>
-			<a tabindex="1" href='home'><%= image_tag("/images_template/vwc_words2c.png", :alt => "Working Voices Choir Rose Logo", :class => "words_img") %></a>
+    	<div class="header">
+            <% logo2 = image_tag("/images_template/wvc_logo2_clr_100.png", :alt => "Working Voices Choir Rose Logo", :class => "logo_img") %>
+			<%= link_to logo2, root_path, :tabindex => 1 %>
+			<% word2c = image_tag("/images_template/vwc_words2c.png", :alt => "Working Voices Choir Rose Logo", :class => "words_img") %>
+			<%= link_to word2c, root_path, :tabindex => 2 %>
+			
+<!--/////////////////////////////////////////////////////////////////////////////// Old Logo and Link Code -->
+<!--			<a tabindex="1" href='/'><%= image_tag("/images_template/wvc_logo2_clr_100.png", :alt => "Working Voices Choir Rose Logo", :class => "logo_img") %></a>
+			<a tabindex="2" href='/'><%= image_tag("/images_template/vwc_words2c.png", :alt => "Working Voices Choir Rose Logo", :class => "words_img") %></a> -->
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////-->			
+			
 	  	</div><!-- end .header -->

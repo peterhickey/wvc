@@ -4,9 +4,15 @@ describe PagesController do
   render_views
   
     before(:each) do
-    #
+	
+	#
     # Define @base_title here.
     #
+	
+	def base_title
+		@base_title = "Working Voices Choir"
+	end
+
   end
 
   describe "GET 'home'" do

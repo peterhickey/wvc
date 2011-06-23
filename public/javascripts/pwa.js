@@ -98,7 +98,7 @@ function picasaweb(j){ //returns the list of all albums for the user
   var id_base = j.feed.entry[i].id.$t.slice(id_begin, id_end);
 
   $("<td valign=top><a class='standard' href='?albumid="+id_base+"'><img src='"+img_base+"?imgmax=160&crop=1' class='pwimages' /></a>");
-  $("<br><table border=0><tr><td></td></tr></table><center><a class='standard' href='?albumid="+id_base+"'>"+ j.feed.entry[i].title.$t +"</a></center></td>");
+  $("<br><table border=0><tr><td></td></tr></table><left><a class='standard' href='?albumid="+id_base+"'>"+ j.feed.entry[i].title.$t +"</a></left></td>");
   if (i % columns == columns-1) {
     $("</tr><tr><td><br></td></tr> <tr><td></td></tr> <tr>");
   }

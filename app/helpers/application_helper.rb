@@ -9,4 +9,9 @@ module ApplicationHelper
 		"#{base_title} | #{@title}"
 		end
 	end
+	
+	# Return the website name
+	def site_name
+		return "Working Voices Choir"
+	end
 end

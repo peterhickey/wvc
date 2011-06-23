@@ -1,0 +1,2 @@
+user = User.new(:name => "Cert Four", :email => "certfour.training@gmal.com")
+user = User.new(:name => "Peter Hickey", :email => "hickeypr@gmal.com")
