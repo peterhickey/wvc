@@ -34,7 +34,7 @@ Wvc::Application.routes.draw do
   
 #  	get "pages/test"
 	
-	match '/', :to => 'pages#home' 
+	match '/home', :to => 'pages#home' 
    
    	match '/performances', :to => 'pages#performances'
 	
