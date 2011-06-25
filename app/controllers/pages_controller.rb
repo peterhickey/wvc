@@ -51,6 +51,10 @@ class PagesController < ApplicationController
 #///////////////////////////////////////////////// Links Page
   def links
 	@title = "Links"
+  end
+#///////////////////////////////////////////////// Sign Up Page
+  def signup
+	@title = "Sign Up"
   end  
 #///////////////////////////////////////////////// Terms & Condtions Page 
   def terms_conditions
@@ -68,7 +72,7 @@ class PagesController < ApplicationController
   def test
 	@title = "Test"
   end 
-#///////////////////////////////////////////////// Test Page  
+#///////////////////////////////////////////////// Help Page  
   def help
 	@title = "Help"
   end 

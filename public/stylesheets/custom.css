@@ -222,6 +222,21 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	font-size:1.2em;line-height:1.25;margin-bottom:1.25em;	
 }
 
+/* Sign up button //////////////////////////////////////////*/
+a.signup_button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: left;
+  width: 86%;
+  background: #666 !important;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 5px;
+}
+
 /*///////////////////////////////////////////////////////////////////////// Gallery Landing Page */
 #gallery_lpage {
 	width: 97%;
@@ -375,4 +390,11 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 
 .bord_bot {
       border-bottom: 1px solid #cdcdcd !important;
+}
+
+/*//////////////////////////////////////////////// Corners */
+.round {
+  -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
 }

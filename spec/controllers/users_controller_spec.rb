@@ -10,7 +10,7 @@ describe UsersController do
     end
 	it "should have the right title" do
       get 'new'
-      response.should have_selector("title", :content => "Members Login")
+      response.should have_selector("title", :content => "Sign Up")
     end
 	
   end

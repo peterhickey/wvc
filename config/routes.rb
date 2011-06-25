@@ -1,42 +1,26 @@
 Wvc::Application.routes.draw do
 	
-#	get "pages/home" 
-   
-# 	get "pages/performances"
-	
-#	get "pages/our_songs"
-	
-#	get "pages/gallery"
-	
-#	get "pages/how_to_join"
-	
-#	get "pages/joining_form"
-		
-#	get "pages/members_login"
-	
-#	get "pages/members_logout"
-	
-#	get "pages/members_news"
-	
-#	get "pages/book_choir"
-	
+#	get "pages/home"    
+# 	get "pages/performances"	
+#	get "pages/our_songs"	
+#	get "pages/gallery"	
+#	get "pages/how_to_join"	
+#	get "pages/joining_form"		
+#	get "pages/members_login"	
+#	get "pages/members_logout"	
+#	get "pages/members_news"	
+#	get "pages/book_choir"	
 #	get "pages/about_us"	
-
-# 	get "pages/contact_us"
-	
-#	get "pages/links"
-	
-#	get "pages/terms_conditions"
-	
-#	get "pages/disclaimer"
-	
-#	get "pages/administrator"
-  
+# 	get "pages/contact_us"	
+#	get "pages/links"	
+#	get "pages/terms_conditions"	
+#	get "pages/disclaimer"	
+#	get "pages/administrator"  
 #  	get "pages/test"
 
 	resources :users
-	match '/members_login',  :to => 'users#new'
-	
+	match '/signup',  :to => 'users#new'	
+		
 	match '/home', :to => 'pages#home' 
    
    	match '/performances', :to => 'pages#performances'
@@ -66,6 +50,9 @@ Wvc::Application.routes.draw do
   	match '/contact_us', :to => 'pages#contact_us'
 	
 	match '/links', :to => 'pages#links'
+	
+# 	This seems to get around a spec page-title-recogniton-error
+	match '/signup', :to => 'pages#signup'
 	
 	match '/terms_conditions', :to => 'pages#terms_conditions'
 	

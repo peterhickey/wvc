@@ -28,9 +28,9 @@ describe "LayoutLinks" do
     get "/joining_form"
 #	click_link "Joining Form"
     response.should have_selector('title', :content => "Joining Form")
-#	get "/members_login"
-	click_link "Members Login"
-	response.should have_selector('title', :content => "Members Login")
+    get "/members_login"
+#    click_link "Members Login"
+    response.should have_selector('title', :content => "Members Login")	
     get "/members_logout"
 #    click_link "Members Logout"
     response.should have_selector('title', :content => "Members Logout")
@@ -49,6 +49,9 @@ describe "LayoutLinks" do
 #    get "/links"
 	click_link "Links"
     response.should have_selector('title', :content => "Links")
+	get "/signup"
+#	click_link "Sign Up"
+	response.should have_selector('title', :content => "Sign Up")
 	get "/terms_conditions"
 #	click_link "Terms & Conditions"
 	response.should have_selector('title', :content => "Terms & Conditions")
