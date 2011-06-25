@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
 
-
 #///////////////////////////////////////////////// Home Page 
   def home
 	@title = "Home"
@@ -24,7 +23,7 @@ class PagesController < ApplicationController
 #///////////////////////////////////////////////// Joining Form Page   
   def joining_form
 	@title = "Joining Form"
-  end
+  end 
 #///////////////////////////////////////////////// Members Login Page - now Users#new page  
   def members_login
 	@title = "Members Login"

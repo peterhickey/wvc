@@ -2,3 +2,5 @@ rails generate refinery_engine performance title:string date:datetime picture:im
 rails generate refinerycms_performances
 
 bundle exec rspec spec/
+
+rails console --sandbox

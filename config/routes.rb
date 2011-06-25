@@ -33,6 +33,9 @@ Wvc::Application.routes.draw do
 #	get "pages/administrator"
   
 #  	get "pages/test"
+
+	resources :users
+	match '/members_login',  :to => 'users#new'
 	
 	match '/home', :to => 'pages#home' 
    
@@ -46,10 +49,11 @@ Wvc::Application.routes.draw do
 	
 	match '/joining_form', :to => 'pages#joining_form'
 
-	get "users/new"
-	match '/members_login',  :to => 'users#new'
-
-	match '/members_login', :to => 'pages#members_login' # This seems to get around a spec page-title-recogniton-error
+#	get "users/new"
+#	match '/members_login',  :to => 'users#new'
+	
+# This seems to get around a spec page-title-recogniton-error
+	match '/members_login', :to => 'pages#members_login'
 	
 	match '/members_logout', :to => 'pages#members_logout'
 	

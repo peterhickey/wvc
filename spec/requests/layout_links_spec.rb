@@ -10,42 +10,60 @@ describe "LayoutLinks" do
   
     it "should have the right links on the layout" do
     visit root_path
-    get "/"
-    response.should have_selector('title', :content => @title)
-    get "/performances"
-    response.should have_selector('title', :content => @title)	
-	get "/our_songs"
-    response.should have_selector('title', :content => @title)	
-	get "/gallery"
-    response.should have_selector('title', :content => @title)
-    get "/how_to_join"
-    response.should have_selector('title', :content => @title)
+#    get "/home"
+	click_link "Home"
+    response.should have_selector('title', :content => "Home")
+#    get "/performances"
+	click_link "Performances"
+    response.should have_selector('title', :content => "Performances")	
+#	 get "/our_songs"
+	click_link "Our Songs"
+    response.should have_selector('title', :content => "Our Songs")	
+#	 get "/gallery"
+    click_link "Gallery"
+    response.should have_selector('title', :content => "Gallery")
+#    get "/how_to_join"
+	click_link "How to Join"
+    response.should have_selector('title', :content => "How to Join")
     get "/joining_form"
-    response.should have_selector('title', :content => @title)
-	get "/members_login"
-	response.should have_selector('title', :content => @title)
+#	click_link "Joining Form"
+    response.should have_selector('title', :content => "Joining Form")
+#	get "/members_login"
+	click_link "Members Login"
+	response.should have_selector('title', :content => "Members Login")
     get "/members_logout"
-    response.should have_selector('title', :content => @title)
+#    click_link "Members Logout"
+    response.should have_selector('title', :content => "Members Logout")
     get "/members_news"
-    response.should have_selector('title', :content => @title)
-    get "/book_choir"
-    response.should have_selector('title', :content => @title)
-    get "/about_us"
-    response.should have_selector('title', :content => @title)
-    get "/contact_us"
-    response.should have_selector('title', :content => @title)
-    get "/links"
-    response.should have_selector('title', :content => @title)
+#	click_link "Members News"
+    response.should have_selector('title', :content => "Members News")
+#    get "/book_choir"
+	click_link "Book the Choir"
+    response.should have_selector('title', :content => "Book the Choir")
+#    get "/about_us"
+	click_link "About Us"
+    response.should have_selector('title', :content => "About Us")
+#    get "/contact_us"
+	click_link "Contact Us"
+    response.should have_selector('title', :content => "Contact Us")
+#    get "/links"
+	click_link "Links"
+    response.should have_selector('title', :content => "Links")
 	get "/terms_conditions"
-	response.should have_selector('title', :content => @title)
-    get "/disclaimer"
-    response.should have_selector('title', :content => @title)
-    get "/administrator"
-    response.should have_selector('title', :content => @title)
+#	click_link "Terms & Conditions"
+	response.should have_selector('title', :content => "Terms & Conditions")
+#    get "/disclaimer"
+	click_link "Disclaimer"
+    response.should have_selector('title', :content => "Disclaimer")
+#    get "/administrator"
+	click_link "Administrator"
+    response.should have_selector('title', :content => "Administrator")
     get "/test"
-    response.should have_selector('title', :content => @title)
-	get "/help"
-    response.should have_selector('title', :content => @title)
+#	click_link "Test"
+    response.should have_selector('title', :content => "Test")
+#	 get "/help"
+	click_link "Help"
+    response.should have_selector('title', :content => "Help")
 	end
   
 end
