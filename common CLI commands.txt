@@ -1,6 +1,53 @@
+##### REFINERYCMS ###############################################
+
 rails generate refinery_engine performance title:string date:datetime picture:image description:text
+
 rails generate refinerycms_performances
 
-bundle exec rspec spec/
 
+##### RAILS CONSOLE #############################################
+
+#Test Console in Rails
 rails console --sandbox
+
+##### RAILS #####################################################
+
+bundle exec rspec spec/ 										#run rspec for test routines
+
+bundle exec rake db:reset										#clear database
+
+##### GIT ##############################
+git init														#Initialized empty Git repository in
+																/sites/rails_projects/new_app
+
+git add .														#add all files to GIT (ignores patterns in .gitignore) to the
+																 staging area (here . represents the current directory)
+git status														#shows all the changes to be committed
+
+git commit -m "changes to GIT"									#tells GIT to keep the changes
+																# (The -m flag lets you add a message for the commit)
+git log															#to see a list of commit messages
+																# (may have to type 'q' to quit git log)
+git checkout -f													#can undo changes by having Git check out the
+																 previous commit with the checkout command (and a -f flag to
+																 force overwriting the current changes)
+git checkout -b branch-name										#switched to a new branch 'branch-name'
+
+git branch														#lists all the local branches, and the asterisk * identifies
+																 which branch that is current
+git mv CURRENT-FILENAME NEW-FILENAME							#changes the current-filename to new-filename
+
+git checkout master												#switch to branch 'master
+
+git merge branch-name											#update files to branch 'master'
+
+git branch -d branch-name										#deletes branch 'branch-name'
+																
+#Note: Git commits are local, recorded only on the machine on which the commits occur.
+			
+git push														#push the changes up to GitHub
+
+git push heroku													#use Git to push the application to Heroku
+
+
+																

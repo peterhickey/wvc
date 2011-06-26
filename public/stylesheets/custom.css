@@ -296,6 +296,31 @@ a.signup_button {
 /*	border: 2px solid #cdcdcd;	*/
 }
 
+/*/////////////////////////////////////////////////////////////////////////////// User Show Page */
+
+#user_show_lpage table.profile {
+  width: 96%;
+  margin: 0px 10px 0px 10px;
+}
+
+#user_show_lpage td.main {
+  width: 75%;
+  padding: .8em;
+}
+
+#user_show_lpage td.sidebar {
+  font-size: .9em;
+  width: 25%;
+  padding: .5em;
+  vertical-align: top;
+  background: #666;
+}
+
+#user_show_lpage .profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+
 /*////////////////////////////////////////////////////////////// General Classes*/
 .bold_text {
      font-weight: bold;
