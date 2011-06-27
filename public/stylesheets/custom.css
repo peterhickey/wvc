@@ -498,7 +498,8 @@ a.signup_button {
 .success {
 	background:#666;
 	color:#ffffff;
+	border: 0px solid #cdcdcd;
 /*	border-color:#3c3f42; */
-	width:92%;
-	margin: 0px 10px 5px 10px;
+	width:91%;
+	margin: 0px 10px 5px 22px;
 }

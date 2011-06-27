@@ -6,18 +6,25 @@
 		<%= render 'layouts/stylesheets' %>
 	</head>
 <body>
+<!--Accessibility feature - Skip Navigation and go to content of web page -->
 	<div id="skip">
 		<a href="#skipToContent" accesskey="c" >Skip to Main Content (ALT 'C')</a>
 	</div>
+	<!--end id skip-->
     <div class="container">
 	<%= render 'layouts/header' %>
 	<div class="nav-content_box">
 	<%= render 'layouts/sidebar1' %>
 		<p><a name="skipToContent" id="skipToContent"></a></p><!--Main Content Start -->
-	  	<div class="content">			
+	  	<div class="content">
+<!--//////////////////////////////////////////////////////// This below is the best 'The Flash' Code -->
 			<% flash.each do |key, value| %>
+			<%= content_tag(:div, value, :class => "flash #{key} round") %>
+			<% end %>		
+<!--			<% flash.each do |key, value| %>
 				<div class="flash <%= key %> round"><%= value %></div>
-			<% end %>
+				<% end %> -->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////// -->			
         	<%= yield %>
 	  	</div><!-- end .content -->
 	<%= render 'layouts/sidebar2' %>

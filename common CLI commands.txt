@@ -10,7 +10,19 @@ rails generate refinerycms_performances
 #Test Console in Rails
 rails console --sandbox
 
+#Check for Rails Environment
+>rails console 
+Loading development environment (Rails 3.0.9)
+>> Rails.env
+=> "development"
+>> Rails.env.development?
+=> true
+>> Rails.env.test?
+=> false
+
 ##### RAILS #####################################################
+
+bundle install
 
 bundle exec rspec spec/ 										#run rspec for test routines
 
