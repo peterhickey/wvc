@@ -43,11 +43,11 @@ h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
 h6 {font-size:1em;font-weight:bold;} */
 
 /*/////////////////////////////////////////////////////////// Substituted Heading Settings*/
-h1 {font-size:1.8em;line-height:1;margin-bottom:0.5em;}
-h2 {font-size:1.5em;margin-bottom:0.75em;}
-h3 {font-size:1.3em;line-height:1;margin-bottom:1em;}
-h4 {font-size:1.1em;line-height:1.25;margin-bottom:1.25em;}
-h5 {font-size:0.9em;font-weight:bold;margin-bottom:1.5em;}
+h1 {font-size:1.7em;line-height:1;margin-bottom:0.4em;}
+h2 {font-size:1.5em;margin-bottom:0.6em;}
+h3 {font-size:1.3em;line-height:0.9;margin-bottom:0.9em;}
+h4 {font-size:1.1em;line-height:1.2;margin-bottom:1.2em;}
+h5 {font-size:0.9em;font-weight:bold;margin-bottom:1.4em;}
 h6 {font-size:0.9em;font-weight:bold;}
 
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
@@ -113,11 +113,11 @@ form.inline p {margin-bottom:0;}
 .error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
 .error, .alert {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
 .notice {background:#fff6bf;color:#514721;border-color:#ffd324;}
-.success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+/*.success {background:#e6efc2;color:#264409;border-color:#c6d880;} */
 .info {background:#d5edf8;color:#205791;border-color:#92cae4;}
 .error a, .alert a {color:#8a1f11;}
 .notice a {color:#514721;}
-.success a {color:#264409;}
+/*.success a {color:#264409;} */
 .info a {color:#205791;}
 
 /* grid.css */

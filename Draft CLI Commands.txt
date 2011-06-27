@@ -1,0 +1,7 @@
+User.create!(:name => "Michael Hartl", :email => "mhartl@example.com", :password => "foobar", :password_confirmation => "foobar")
+
+User.create!(:name => "Example User", :email => "user@example.com", :password => "foobar", :password_confirmation => "foobar")
+
+user.update_attributes(:email => "example@railstutorial.org", :password => "foobar", :password_confirmation => "foobar")
+
+User.create!(:name => "Example User", :email => "user@example.com", :password => "foobar", :password_confirmation => "foobar")

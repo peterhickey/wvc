@@ -14,7 +14,10 @@
 	<div class="nav-content_box">
 	<%= render 'layouts/sidebar1' %>
 		<p><a name="skipToContent" id="skipToContent"></a></p><!--Main Content Start -->
-	  	<div class="content">
+	  	<div class="content">			
+			<% flash.each do |key, value| %>
+				<div class="flash <%= key %> round"><%= value %></div>
+			<% end %>
         	<%= yield %>
 	  	</div><!-- end .content -->
 	<%= render 'layouts/sidebar2' %>

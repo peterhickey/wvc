@@ -207,6 +207,10 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 .wvc_fnt_yel3 {
 	color: #ece862; /* actual yellow of logo */
 }
+.wvc_fnt_wht1 {
+	color: #ffffff; /* white */
+}
+
 
 /*/////////////////////////////////////////////////////////////////////////// Background Colours */
 .wvc_bgd_blk1 {
@@ -296,7 +300,7 @@ a.signup_button {
 /*	border: 2px solid #cdcdcd;	*/
 }
 
-/*/////////////////////////////////////////////////////////////////////////////// User Show Page */
+/*/////////////////////////////////////////////////////////////// User Show Page */
 
 #user_show_lpage table.profile {
   width: 96%;
@@ -319,6 +323,73 @@ a.signup_button {
 #user_show_lpage .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
+}
+
+/*//////////////////////////////////////////////////////////////// User New Page */
+
+#user_new_lpage {
+	margin-left: 10px;
+}
+/*///////////////////// Margin adjust for irregular email fields */
+#user_new_lpage div.field_label {
+    margin-left:15px;
+	margin-bottom:0px;
+}
+
+#user_new_lpage div.field_entry {
+	margin-top: -20px;
+    margin-left:15px;
+	margin-bottom: 10px;
+}
+/*////////////////////////////////////////////////////////////// */
+
+#user_new_lpage div.field, div.actions {
+    margin-left:15px;
+	margin-bottom: 10px;
+}
+
+/*//////////////////////////////// app/views/shared/_error_messages.html.erb Errors Partial */
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: #b00000 !important;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #ffffff;
+}
+
+#error_partial #error_explanation {
+  width: 400px;
+  border: 2px solid #b00000 !important;
+  padding: 7px 7px 3px 7px;
+  margin: 20px 0px 20px 15px;
+/*  background-color: #f0f0f0; */
+  color: #ffffff;
+  background-color: #666;
+}
+
+#error_partial #error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 14px;
+  margin: -7px;
+  background-color: #b00;
+  color: #fff;
+}
+
+#error_partial #error_explanation p {
+  color: #ffffff;
+  margin: 10px 0px 0px 0px;
+  padding: 5px;
+}
+
+#error_partial #error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
 }
 
 /*////////////////////////////////////////////////////////////// General Classes*/
@@ -422,4 +493,12 @@ a.signup_button {
   -moz-border-radius:    7px;
   -webkit-border-radius: 7px;
   border-radius:         7px;
+}
+/*//////////////////////////////////////////////// Flash Messages */
+.success {
+	background:#666;
+	color:#ffffff;
+/*	border-color:#3c3f42; */
+	width:92%;
+	margin: 0px 10px 5px 10px;
 }
