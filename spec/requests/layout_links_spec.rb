@@ -32,7 +32,7 @@ describe "LayoutLinks" do
 #    click_link "Members Login"
     response.should have_selector('title', :content => "Members Login")	
     get "/members_logout"
-#    click_link "Members Logout"
+#    click_link 'Members Logout'
     response.should have_selector('title', :content => "Members Logout")
     get "/members_news"
 #	click_link "Members News"
@@ -68,5 +68,36 @@ describe "LayoutLinks" do
 	click_link "Help"
     response.should have_selector('title', :content => "Help")
 	end
+	
+  describe "when not signed in" do
+    it "should have a signin link" do
+      visit root_path
+      response.should have_selector("a", :href => signin_path, :content => "Members Login")
+                                         
+    end
+  end
+
+  describe "when signed in" do
+
+    before(:each) do
+      @user = Factory(:user)
+      visit signin_path
+      fill_in :email,    :with => @user.email
+      fill_in :password, :with => @user.password
+      click_button
+    end
+
+    it "should have a signout link" do
+      visit root_path
+      response.should have_selector("a", :href => signout_path,
+                                         :content => "Members Logout")
+    end
+
+    it "should have a profile link" do
+      visit root_path
+      response.should have_selector("a", :href => user_path(@user),
+                                         :content => "Profile")
+    end 
+  end
   
 end

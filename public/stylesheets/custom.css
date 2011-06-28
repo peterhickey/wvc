@@ -348,6 +348,16 @@ a.signup_button {
 	margin-bottom: 10px;
 }
 
+/*////////////////////////////////////////////////////////////// Sessions New Page */
+#sessions_new_lpage {
+	margin-left: 10px;
+}
+
+#sessions_new_lpage div.field, div.actions {
+    margin-left:15px;
+	margin-bottom: 10px;
+}
+
 /*//////////////////////////////// app/views/shared/_error_messages.html.erb Errors Partial */
 
 .field_with_errors {
@@ -494,7 +504,7 @@ a.signup_button {
   -webkit-border-radius: 7px;
   border-radius:         7px;
 }
-/*//////////////////////////////////////////////// Flash Messages */
+/*///////////////////////////////////////// Flash Messages */
 .success {
 	background:#666;
 	color:#ffffff;
@@ -503,3 +513,20 @@ a.signup_button {
 	width:91%;
 	margin: 0px 10px 5px 22px;
 }
+.error, .alert {
+	background:#fbe3e4;
+	color:#8a1f11;
+	border-color:#fbc2c4;
+	width:91%;
+	margin: 0px 10px 5px 22px;
+}
+
+.error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
+
+.notice {background:#fff6bf;color:#514721;border-color:#ffd324;}
+/*.success {background:#e6efc2;color:#264409;border-color:#c6d880;} */
+.info {background:#d5edf8;color:#205791;border-color:#92cae4;}
+.error a, .alert a {color:#8a1f11;}
+.notice a {color:#514721;}
+/*.success a {color:#264409;} */
+.info a {color:#205791;}

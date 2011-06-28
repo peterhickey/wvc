@@ -1,5 +1,7 @@
 Wvc::Application.routes.draw do
 	
+  get "sessions/new"
+
 #	get "pages/home"    
 # 	get "pages/performances"	
 #	get "pages/our_songs"	
@@ -19,7 +21,11 @@ Wvc::Application.routes.draw do
 #  	get "pages/test"
 
 	resources :users
-	match '/signup',  :to => 'users#new'	
+	resources :sessions, :only => [:new, :create, :destroy]
+	
+	match '/signup',  :to => 'users#new'
+	match '/signin', :to => 'sessions#new'
+	match '/signout', :to => 'sessions#destroy'
 		
 	match '/home', :to => 'pages#home' 
    
@@ -32,13 +38,11 @@ Wvc::Application.routes.draw do
 	match '/how_to_join', :to => 'pages#how_to_join'
 	
 	match '/joining_form', :to => 'pages#joining_form'
-
-#	get "users/new"
-#	match '/members_login',  :to => 'users#new'
 	
-# This seems to get around a spec page-title-recogniton-error
+# 	This seems to get around a spec page-title-recogniton-error
 	match '/members_login', :to => 'pages#members_login'
 	
+# 	This seems to get around a spec page-title-recogniton-error	
 	match '/members_logout', :to => 'pages#members_logout'
 	
 	match '/members_news', :to => 'pages#members_news'
@@ -52,7 +56,9 @@ Wvc::Application.routes.draw do
 	match '/links', :to => 'pages#links'
 	
 # 	This seems to get around a spec page-title-recogniton-error
-	match '/signup', :to => 'pages#signup'
+#	match '/signup', :to => 'pages#signup'
+#	match '/signin', :to => 'pages#signin'
+#	match '/signout', :to => 'pages#signout'
 	
 	match '/terms_conditions', :to => 'pages#terms_conditions'
 	
