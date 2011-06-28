@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.9)
       activesupport (= 3.0.9)
     activesupport (3.0.9)
+    annotate-models (1.0.4)
     arel (2.0.10)
     autotest-standalone (4.5.5)
     builder (2.1.2)
@@ -96,6 +97,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  annotate-models (= 1.0.4)
   autotest-standalone
   factory_girl_rails (= 1.0)
   gravatar_image_tag (= 1.0.0.pre2)
